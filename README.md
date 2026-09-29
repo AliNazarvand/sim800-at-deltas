@@ -38,4 +38,6 @@ specifications, targeting ESP32-WROOM-32 integrations.
     cmake --build build
     ctest --test-dir build --output-on-failure
 
-Related project: sim800-at-urc — full AT command / URC catalog.
+## Related Project
+
+- [sim800-at-urc](https://github.com/AliNazarvand/sim800-at-urc) — full AT Command / URC catalog for the same module family.
