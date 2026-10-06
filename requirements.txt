@@ -1,4 +1,4 @@
-PyMuPDF~=1.23.0
+PyMuPDF~=1.28.2
 Jinja2~=3.1.0
 PyYAML~=6.0
 jsonschema~=4.20.0
