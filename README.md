@@ -1,3 +1,23 @@
+<!-- ===== HEADER ===== -->
+<div align="center">
+
+# SIMCom SIM800 Series — Static Module Database
+
+**A static, header-only C++17 database of SIMCom SIM800 Series module specifications, targeting ESP32-WROOM-32 integrations.**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg?style=for-the-badge&logo=c%2B%2B)](https://en.cppreference.com/w/cpp/17)
+[![Header-Only](https://img.shields.io/badge/header--only-yes-brightgreen.svg?style=for-the-badge)]()
+[![PlatformIO](https://img.shields.io/badge/PlatformIO-compatible-orange.svg?style=for-the-badge&logo=platformio)]()
+[![GitHub release](https://img.shields.io/github/v/release/AliNazarvand/sim800-at-deltas?style=for-the-badge&color=green&label=Release)](https://github.com/AliNazarvand/sim800-at-deltas/releases)
+[![CI](https://github.com/AliNazarvand/sim800-at-deltas/actions/workflows/ci.yml/badge.svg?style=for-the-badge)](https://github.com/AliNazarvand/sim800-at-deltas/actions/workflows/ci.yml)
+
+[Quick Start](#-quick-start) · [Features](#-features) · [Modules](#-supported-modules) · [Docs](#-documentation) · [Contributing](#-contributing) · [License](#-license)
+
+</div>
+
+
+
 # SIMCom SIM800 Series — Static Module Database
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
