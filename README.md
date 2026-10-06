@@ -1,4 +1,3 @@
-<!-- ===== HEADER ===== -->
 <div align="center">
 
 # SIMCom SIM800 Series — Static Module Database
