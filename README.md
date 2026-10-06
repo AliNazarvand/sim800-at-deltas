@@ -298,7 +298,7 @@ If you use this project in academic work, please cite:
 **Ali Nazarvand**
 
 - GitHub: [@AliNazarvand](https://github.com/AliNazarvand)
-- Email: [ali.nazarvand@example.com](mailto:ali.nazarvand@example.com) *(replace with real email)*
+- Email: [Ali.Nazarvand@Gmail.com](mailto:ali.nazarvand@example.com) *(replace with real email)*
 
 ---
 
