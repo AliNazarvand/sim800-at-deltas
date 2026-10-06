@@ -1,0 +1,83 @@
+schema_version: 1
+at_deltas:
+  - module: "SIM800L"
+    cband_quad_band: true
+    cmic_channels: 3
+    sidet_channels: 3
+    supports_csclk2: true
+    cfgri_default: 0
+    chfa_pcm_support: true
+    jamming_pin: "PIN5"
+    extra_note: ""
+  - module: "SIM800C"
+    cband_quad_band: true
+    cmic_channels: 2
+    sidet_channels: 2
+    supports_csclk2: true
+    cfgri_default: 2
+    chfa_pcm_support: false
+    jamming_pin: "PIN29"
+    extra_note: ""
+  - module: "SIM808"
+    cband_quad_band: true
+    cmic_channels: 3
+    sidet_channels: 3
+    supports_csclk2: true
+    cfgri_default: 2
+    chfa_pcm_support: true
+    jamming_pin: "PIN63"
+    extra_note: ""
+  - module: "SIM868"
+    cband_quad_band: true
+    cmic_channels: 3
+    sidet_channels: 3
+    supports_csclk2: true
+    cfgri_default: 2
+    chfa_pcm_support: true
+    jamming_pin: "PIN29"
+    extra_note: ""
+  - module: "SIM800A"
+    cband_quad_band: false
+    cmic_channels: 2
+    sidet_channels: 2
+    supports_csclk2: true
+    cfgri_default: 2
+    chfa_pcm_support: false
+    jamming_pin: "PIN67"
+    extra_note: ""
+  - module: "SIM800F"
+    cband_quad_band: true
+    cmic_channels: 2
+    sidet_channels: 2
+    supports_csclk2: true
+    cfgri_default: 2
+    chfa_pcm_support: false
+    jamming_pin: "PIN67"
+    extra_note: ""
+  - module: "SIM800H"
+    cband_quad_band: true
+    cmic_channels: 3
+    sidet_channels: 3
+    supports_csclk2: true
+    cfgri_default: 0
+    chfa_pcm_support: true
+    jamming_pin: "PIN5"
+    extra_note: ""
+  - module: "SIM800"
+    cband_quad_band: true
+    cmic_channels: 2
+    sidet_channels: 2
+    supports_csclk2: true
+    cfgri_default: 2
+    chfa_pcm_support: true
+    jamming_pin: "PIN67"
+    extra_note: ""
+  - module: "SIM800C-DS"
+    cband_quad_band: true
+    cmic_channels: 3
+    sidet_channels: 3
+    supports_csclk2: true
+    cfgri_default: 0
+    chfa_pcm_support: true
+    jamming_pin: "PIN29"
+    extra_note: "ch.21.13: FD not supported"

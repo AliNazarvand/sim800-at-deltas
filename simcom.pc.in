@@ -1,0 +1,7 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+includedir=${prefix}/include
+
+Name: simcom
+Description: SIMCom SIM800 Series static module database
+Version: @PROJECT_VERSION@
+Cflags: -I${includedir}

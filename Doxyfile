@@ -1,0 +1,11 @@
+PROJECT_NAME           = "SIMCom SIM800 Series"
+OUTPUT_DIRECTORY       = docs/doxygen
+INPUT                  = include/simcom docs/DATABASE_REFERENCE.md
+RECURSIVE              = NO
+FILE_PATTERNS          = *.hpp *.md
+USE_MDFILE_AS_MAINPAGE = docs/DATABASE_REFERENCE.md
+MACRO_EXPANSION        = YES
+PREDEFINED             = "inline="
+EXCLUDE_PATTERNS       = */simcom_database.hpp
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO

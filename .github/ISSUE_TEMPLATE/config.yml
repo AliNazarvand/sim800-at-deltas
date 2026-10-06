@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question / Discussion
+    url: https://github.com/AliNazarvand/sim800-at-deltas/discussions
+    about: Ask questions or start a discussion about this project.
+  - name: Security issue
+    url: https://github.com/AliNazarvand/sim800-at-deltas/security/advisories/new
+    about: Report a security vulnerability privately.
+  - name: Documentation
+    url: https://github.com/AliNazarvand/sim800-at-deltas/tree/main/docs
+    about: Browse the documentation.

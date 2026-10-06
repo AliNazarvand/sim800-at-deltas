@@ -1,0 +1,82 @@
+# ---------------------------------------------------------------------------
+# Normalize line endings
+# ---------------------------------------------------------------------------
+* text=auto eol=lf
+
+# ---------------------------------------------------------------------------
+# Explicit text file types
+# ---------------------------------------------------------------------------
+*.c       text eol=lf
+*.cc      text eol=lf
+*.cpp     text eol=lf
+*.cxx     text eol=lf
+*.h       text eol=lf
+*.hpp     text eol=lf
+*.hh      text eol=lf
+*.hxx     text eol=lf
+*.inl     text eol=lf
+*.ipp     text eol=lf
+*.inc     text eol=lf
+*.cmake   text eol=lf
+CMakeLists.txt text eol=lf
+*.py      text eol=lf
+*.pyi     text eol=lf
+*.sh      text eol=lf
+*.bash    text eol=lf
+*.md      text eol=lf
+*.markdown text eol=lf
+*.txt     text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.toml    text eol=lf
+*.json    text eol=lf
+*.j2      text eol=lf
+*.in      text eol=lf
+*.pc.in   text eol=lf
+*.cmake.in text eol=lf
+*.gitignore       text eol=lf
+*.gitattributes   text eol=lf
+.gitignore        text eol=lf
+.gitattributes    text eol=lf
+LICENSE   text eol=lf
+Doxyfile  text eol=lf
+
+# ---------------------------------------------------------------------------
+# Windows-only text files (CRLF)
+# ---------------------------------------------------------------------------
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+*.ps1     text eol=crlf
+*.psm1    text eol=crlf
+
+# ---------------------------------------------------------------------------
+# Binary files (no diff, no line ending conversion)
+# ---------------------------------------------------------------------------
+*.pdf     binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.bmp     binary
+*.ico     binary
+*.svg     text eol=lf
+*.zip     binary
+*.tar     binary
+*.gz      binary
+*.7z      binary
+*.exe     binary
+*.dll     binary
+*.lib     binary
+*.a       binary
+*.o       binary
+*.obj     binary
+*.so      binary
+*.dylib   binary
+*.bin     binary
+
+# ---------------------------------------------------------------------------
+# Linguist overrides (improve GitHub language stats)
+# ---------------------------------------------------------------------------
+tests/           linguist-vendored=false
+tools/           linguist-vendored=false
+docs/            linguist-documentation

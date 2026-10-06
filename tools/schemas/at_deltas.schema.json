@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "at_deltas.yaml",
+  "type": "object",
+  "required": ["schema_version", "at_deltas"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "at_deltas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["module","cband_quad_band","cmic_channels","sidet_channels",
+                     "supports_csclk2","cfgri_default","chfa_pcm_support","jamming_pin"],
+        "properties": {
+          "module": { "type": "string" },
+          "cband_quad_band": { "type": "boolean" },
+          "cmic_channels": { "type": "integer", "minimum": 0 },
+          "sidet_channels": { "type": "integer", "minimum": 0 },
+          "supports_csclk2": { "type": "boolean" },
+          "cfgri_default": { "type": "integer", "minimum": 0 },
+          "chfa_pcm_support": { "type": "boolean" },
+          "jamming_pin": { "enum": ["None","PIN5","PIN29","PIN63","PIN67"] },
+          "extra_note": { "type": "string" }
+        }
+      }
+    }
+  }
+}

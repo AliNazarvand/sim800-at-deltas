@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "version_deltas.yaml",
+  "type": "object",
+  "required": ["schema_version", "version_deltas"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "version_deltas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["command_name"],
+        "properties": {
+          "command_name": { "type": "string" },
+          "added_in": { "enum": ["V1.01","V1.10","V1.12", null] },
+          "modified_in": { "enum": ["V1.01","V1.10","V1.12", null] },
+          "deprecated_in": { "enum": ["V1.01","V1.10","V1.12", null] },
+          "description": { "type": "string" }
+        }
+      }
+    }
+  }
+}

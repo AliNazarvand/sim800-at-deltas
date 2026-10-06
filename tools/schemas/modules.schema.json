@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "modules.yaml",
+  "type": "object",
+  "required": ["schema_version", "modules"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "modules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "hw", "feat"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "hw": {
+            "type": "object",
+            "required": ["package_type","pin_count","voltage_min_mv","voltage_max_mv","flash_kb"],
+            "properties": {
+              "package_type": { "type": "string" },
+              "pin_count": { "type": "integer", "minimum": 0 },
+              "voltage_min_mv": { "type": "integer", "minimum": 0 },
+              "voltage_max_mv": { "type": "integer", "minimum": 0 },
+              "flash_kb": { "type": "integer", "minimum": 0 },
+              "length_mm": { "type": "integer", "minimum": 0 },
+              "width_mm": { "type": "integer", "minimum": 0 },
+              "height_mm": { "type": "integer", "minimum": 0 },
+              "weight_mg": { "type": "integer", "minimum": 0 },
+              "operating_temp_min_c": { "type": "integer" },
+              "operating_temp_max_c": { "type": "integer" },
+              "current_sleep_ua": { "type": "integer", "minimum": 0 },
+              "current_peak_ma": { "type": "integer", "minimum": 0 },
+              "gprs_class": { "type": "integer", "minimum": 0 },
+              "gprs_downlink_kbps": { "type": "integer", "minimum": 0 },
+              "gprs_uplink_kbps": { "type": "integer", "minimum": 0 },
+              "baud_rate_min": { "type": "integer", "minimum": 0 },
+              "baud_rate_max": { "type": "integer", "minimum": 0 },
+              "sim_card_type": { "enum": ["UNKNOWN","MICRO","NANO","STANDARD"] },
+              "antenna_connector": { "enum": ["UNKNOWN","UFL","SPRING","SMA","PCB"] },
+              "uart_count": { "type": "integer", "minimum": 0 },
+              "usb_support": { "type": "boolean" },
+              "rtc_backup": { "type": "boolean" },
+              "network_status_pin": { "type": "string" },
+              "operating_status_pin": { "type": "string" }
+            }
+          },
+          "feat": {
+            "type": "object",
+            "required": ["has_bluetooth","has_gps","has_fm","has_audio"],
+            "properties": {
+              "has_bluetooth": { "type": "boolean" },
+              "has_gps": { "type": "boolean" },
+              "has_fm": { "type": "boolean" },
+              "has_audio": { "type": "boolean" },
+              "has_keypad": { "type": "boolean" },
+              "has_sd": { "type": "boolean" },
+              "has_pcm": { "type": "boolean" },
+              "has_i2c": { "type": "boolean" },
+              "gpio_count": { "type": "integer", "minimum": 0 },
+              "adc_count": { "type": "integer", "minimum": 0 },
+              "pwm_count": { "type": "integer", "minimum": 0 },
+              "has_uart": { "type": "boolean" },
+              "has_usb": { "type": "boolean" },
+              "has_rtc": { "type": "boolean" },
+              "has_kpled": { "type": "boolean" },
+              "has_rf_sync": { "type": "boolean" },
+              "has_antenna_gps": { "type": "boolean" },
+              "has_antenna_bt": { "type": "boolean" },
+              "has_tdd": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

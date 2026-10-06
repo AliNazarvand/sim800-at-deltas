@@ -1,0 +1,29 @@
+schema_version: 1
+cross_references:
+  - module: "SIM800L"
+    audio_pins: []
+    related_commands: []
+  - module: "SIM800C"
+    audio_pins: []
+    related_commands: []
+  - module: "SIM808"
+    audio_pins: []
+    related_commands: []
+  - module: "SIM868"
+    audio_pins: []
+    related_commands: []
+  - module: "SIM800A"
+    audio_pins: []
+    related_commands: []
+  - module: "SIM800F"
+    audio_pins: []
+    related_commands: []
+  - module: "SIM800H"
+    audio_pins: []
+    related_commands: []
+  - module: "SIM800"
+    audio_pins: []
+    related_commands: []
+  - module: "SIM800C-DS"
+    audio_pins: []
+    related_commands: []

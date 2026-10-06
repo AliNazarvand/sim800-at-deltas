@@ -1,0 +1,186 @@
+===== module_to_json: SIM800L =====
+{"name":"SIM800L","hw":{"package_type":"LGA","pin_count":88,"voltage_min_mv":3400,"voltage_max_mv":4400,"flash_kb":2048,"length_mm":0,"width_mm":0,"height_mm":0,"weight_mg":0,"operating_temp_min_c":0,"operating_temp_max_c":0,"current_sleep_ua":0,"current_peak_ma":0,"gprs_class":0,"gprs_downlink_kbps":0,"gprs_uplink_kbps":0,"baud_rate_min":0,"baud_rate_max":0,"sim_card_type":"UNKNOWN","antenna_connector":"UNKNOWN","uart_count":0,"usb_support":false,"rtc_backup":false,"network_status_pin":"","operating_status_pin":""},"feat":{"has_bluetooth":false,"has_gps":false,"has_fm":true,"has_audio":true,"has_keypad":true,"has_sd":true,"has_pcm":true,"has_i2c":true,"gpio_count":3,"adc_count":1,"pwm_count":1,"has_uart":false,"has_usb":false,"has_rtc":false,"has_kpled":false,"has_rf_sync":false,"has_antenna_gps":false,"has_antenna_bt":false,"has_tdd":false},"at":{"cband_quad_band":true,"cmic_channels":3,"sidet_channels":3,"supports_csclk2":true,"cfgri_default":0,"chfa_pcm_support":true,"jamming_pin":"PIN5","extra_note":"","jamming_pin_enum":"PIN5"}}
+===== module_to_json: SIM800C =====
+{"name":"SIM800C","hw":{"package_type":"SMT","pin_count":42,"voltage_min_mv":3400,"voltage_max_mv":4400,"flash_kb":4096,"length_mm":0,"width_mm":0,"height_mm":0,"weight_mg":0,"operating_temp_min_c":0,"operating_temp_max_c":0,"current_sleep_ua":0,"current_peak_ma":0,"gprs_class":0,"gprs_downlink_kbps":0,"gprs_uplink_kbps":0,"baud_rate_min":0,"baud_rate_max":0,"sim_card_type":"UNKNOWN","antenna_connector":"UNKNOWN","uart_count":0,"usb_support":false,"rtc_backup":false,"network_status_pin":"","operating_status_pin":""},"feat":{"has_bluetooth":true,"has_gps":false,"has_fm":false,"has_audio":true,"has_keypad":false,"has_sd":false,"has_pcm":false,"has_i2c":false,"gpio_count":0,"adc_count":1,"pwm_count":0,"has_uart":false,"has_usb":false,"has_rtc":false,"has_kpled":false,"has_rf_sync":false,"has_antenna_gps":false,"has_antenna_bt":false,"has_tdd":false},"at":{"cband_quad_band":true,"cmic_channels":2,"sidet_channels":2,"supports_csclk2":true,"cfgri_default":2,"chfa_pcm_support":false,"jamming_pin":"PIN29","extra_note":"","jamming_pin_enum":"PIN29"}}
+===== module_to_json: SIM808 =====
+{"name":"SIM808","hw":{"package_type":"SMT","pin_count":68,"voltage_min_mv":3400,"voltage_max_mv":4400,"flash_kb":0,"length_mm":0,"width_mm":0,"height_mm":0,"weight_mg":0,"operating_temp_min_c":0,"operating_temp_max_c":0,"current_sleep_ua":0,"current_peak_ma":0,"gprs_class":0,"gprs_downlink_kbps":0,"gprs_uplink_kbps":0,"baud_rate_min":0,"baud_rate_max":0,"sim_card_type":"UNKNOWN","antenna_connector":"UNKNOWN","uart_count":0,"usb_support":false,"rtc_backup":false,"network_status_pin":"","operating_status_pin":""},"feat":{"has_bluetooth":true,"has_gps":true,"has_fm":false,"has_audio":true,"has_keypad":true,"has_sd":true,"has_pcm":true,"has_i2c":true,"gpio_count":2,"adc_count":2,"pwm_count":2,"has_uart":false,"has_usb":false,"has_rtc":false,"has_kpled":false,"has_rf_sync":false,"has_antenna_gps":false,"has_antenna_bt":false,"has_tdd":false},"at":{"cband_quad_band":true,"cmic_channels":3,"sidet_channels":3,"supports_csclk2":true,"cfgri_default":2,"chfa_pcm_support":true,"jamming_pin":"PIN63","extra_note":"","jamming_pin_enum":"PIN63"}}
+===== module_to_json: SIM868 =====
+{"name":"SIM868","hw":{"package_type":"SMT+LGA","pin_count":77,"voltage_min_mv":3400,"voltage_max_mv":4400,"flash_kb":4096,"length_mm":0,"width_mm":0,"height_mm":0,"weight_mg":0,"operating_temp_min_c":0,"operating_temp_max_c":0,"current_sleep_ua":0,"current_peak_ma":0,"gprs_class":0,"gprs_downlink_kbps":0,"gprs_uplink_kbps":0,"baud_rate_min":0,"baud_rate_max":0,"sim_card_type":"UNKNOWN","antenna_connector":"UNKNOWN","uart_count":0,"usb_support":false,"rtc_backup":false,"network_status_pin":"","operating_status_pin":""},"feat":{"has_bluetooth":true,"has_gps":true,"has_fm":false,"has_audio":true,"has_keypad":false,"has_sd":true,"has_pcm":true,"has_i2c":true,"gpio_count":2,"adc_count":1,"pwm_count":0,"has_uart":false,"has_usb":false,"has_rtc":false,"has_kpled":false,"has_rf_sync":false,"has_antenna_gps":false,"has_antenna_bt":false,"has_tdd":false},"at":{"cband_quad_band":true,"cmic_channels":3,"sidet_channels":3,"supports_csclk2":true,"cfgri_default":2,"chfa_pcm_support":true,"jamming_pin":"PIN29","extra_note":"","jamming_pin_enum":"PIN29"}}
+===== module_to_json: SIM800A =====
+{"name":"SIM800A","hw":{"package_type":"SMT","pin_count":68,"voltage_min_mv":3400,"voltage_max_mv":4400,"flash_kb":0,"length_mm":0,"width_mm":0,"height_mm":0,"weight_mg":0,"operating_temp_min_c":0,"operating_temp_max_c":0,"current_sleep_ua":0,"current_peak_ma":0,"gprs_class":0,"gprs_downlink_kbps":0,"gprs_uplink_kbps":0,"baud_rate_min":0,"baud_rate_max":0,"sim_card_type":"UNKNOWN","antenna_connector":"UNKNOWN","uart_count":0,"usb_support":false,"rtc_backup":false,"network_status_pin":"","operating_status_pin":""},"feat":{"has_bluetooth":true,"has_gps":false,"has_fm":false,"has_audio":true,"has_keypad":true,"has_sd":false,"has_pcm":false,"has_i2c":true,"gpio_count":3,"adc_count":1,"pwm_count":2,"has_uart":false,"has_usb":false,"has_rtc":false,"has_kpled":false,"has_rf_sync":false,"has_antenna_gps":false,"has_antenna_bt":false,"has_tdd":false},"at":{"cband_quad_band":false,"cmic_channels":2,"sidet_channels":2,"supports_csclk2":true,"cfgri_default":2,"chfa_pcm_support":false,"jamming_pin":"PIN67","extra_note":"","jamming_pin_enum":"PIN67"}}
+===== module_to_json: SIM800F =====
+{"name":"SIM800F","hw":{"package_type":"SMT","pin_count":68,"voltage_min_mv":3400,"voltage_max_mv":4400,"flash_kb":0,"length_mm":0,"width_mm":0,"height_mm":0,"weight_mg":0,"operating_temp_min_c":0,"operating_temp_max_c":0,"current_sleep_ua":0,"current_peak_ma":0,"gprs_class":0,"gprs_downlink_kbps":0,"gprs_uplink_kbps":0,"baud_rate_min":0,"baud_rate_max":0,"sim_card_type":"UNKNOWN","antenna_connector":"UNKNOWN","uart_count":0,"usb_support":false,"rtc_backup":false,"network_status_pin":"","operating_status_pin":""},"feat":{"has_bluetooth":true,"has_gps":false,"has_fm":false,"has_audio":true,"has_keypad":true,"has_sd":false,"has_pcm":false,"has_i2c":true,"gpio_count":3,"adc_count":1,"pwm_count":2,"has_uart":false,"has_usb":false,"has_rtc":false,"has_kpled":false,"has_rf_sync":false,"has_antenna_gps":false,"has_antenna_bt":false,"has_tdd":false},"at":{"cband_quad_band":true,"cmic_channels":2,"sidet_channels":2,"supports_csclk2":true,"cfgri_default":2,"chfa_pcm_support":false,"jamming_pin":"PIN67","extra_note":"","jamming_pin_enum":"PIN67"}}
+===== module_to_json: SIM800H =====
+{"name":"SIM800H","hw":{"package_type":"LGA","pin_count":88,"voltage_min_mv":3400,"voltage_max_mv":4400,"flash_kb":4096,"length_mm":0,"width_mm":0,"height_mm":0,"weight_mg":0,"operating_temp_min_c":0,"operating_temp_max_c":0,"current_sleep_ua":0,"current_peak_ma":0,"gprs_class":0,"gprs_downlink_kbps":0,"gprs_uplink_kbps":0,"baud_rate_min":0,"baud_rate_max":0,"sim_card_type":"UNKNOWN","antenna_connector":"UNKNOWN","uart_count":0,"usb_support":false,"rtc_backup":false,"network_status_pin":"","operating_status_pin":""},"feat":{"has_bluetooth":true,"has_gps":false,"has_fm":true,"has_audio":true,"has_keypad":true,"has_sd":true,"has_pcm":true,"has_i2c":true,"gpio_count":3,"adc_count":1,"pwm_count":1,"has_uart":false,"has_usb":false,"has_rtc":false,"has_kpled":false,"has_rf_sync":false,"has_antenna_gps":false,"has_antenna_bt":false,"has_tdd":false},"at":{"cband_quad_band":true,"cmic_channels":3,"sidet_channels":3,"supports_csclk2":true,"cfgri_default":0,"chfa_pcm_support":true,"jamming_pin":"PIN5","extra_note":"","jamming_pin_enum":"PIN5"}}
+===== module_to_json: SIM800 =====
+{"name":"SIM800","hw":{"package_type":"SMT","pin_count":68,"voltage_min_mv":3400,"voltage_max_mv":4400,"flash_kb":0,"length_mm":0,"width_mm":0,"height_mm":0,"weight_mg":0,"operating_temp_min_c":0,"operating_temp_max_c":0,"current_sleep_ua":0,"current_peak_ma":0,"gprs_class":0,"gprs_downlink_kbps":0,"gprs_uplink_kbps":0,"baud_rate_min":0,"baud_rate_max":0,"sim_card_type":"UNKNOWN","antenna_connector":"UNKNOWN","uart_count":0,"usb_support":false,"rtc_backup":false,"network_status_pin":"","operating_status_pin":""},"feat":{"has_bluetooth":true,"has_gps":false,"has_fm":false,"has_audio":true,"has_keypad":true,"has_sd":false,"has_pcm":true,"has_i2c":true,"gpio_count":2,"adc_count":1,"pwm_count":2,"has_uart":false,"has_usb":false,"has_rtc":false,"has_kpled":false,"has_rf_sync":false,"has_antenna_gps":false,"has_antenna_bt":false,"has_tdd":false},"at":{"cband_quad_band":true,"cmic_channels":2,"sidet_channels":2,"supports_csclk2":true,"cfgri_default":2,"chfa_pcm_support":true,"jamming_pin":"PIN67","extra_note":"","jamming_pin_enum":"PIN67"}}
+===== module_to_json: SIM800C-DS =====
+{"name":"SIM800C-DS","hw":{"package_type":"SMT+LGA","pin_count":77,"voltage_min_mv":3400,"voltage_max_mv":4400,"flash_kb":4096,"length_mm":0,"width_mm":0,"height_mm":0,"weight_mg":0,"operating_temp_min_c":0,"operating_temp_max_c":0,"current_sleep_ua":0,"current_peak_ma":0,"gprs_class":0,"gprs_downlink_kbps":0,"gprs_uplink_kbps":0,"baud_rate_min":0,"baud_rate_max":0,"sim_card_type":"UNKNOWN","antenna_connector":"UNKNOWN","uart_count":0,"usb_support":false,"rtc_backup":false,"network_status_pin":"","operating_status_pin":""},"feat":{"has_bluetooth":true,"has_gps":false,"has_fm":true,"has_audio":true,"has_keypad":false,"has_sd":true,"has_pcm":true,"has_i2c":true,"gpio_count":2,"adc_count":1,"pwm_count":0,"has_uart":false,"has_usb":false,"has_rtc":false,"has_kpled":false,"has_rf_sync":false,"has_antenna_gps":false,"has_antenna_bt":false,"has_tdd":false},"at":{"cband_quad_band":true,"cmic_channels":3,"sidet_channels":3,"supports_csclk2":true,"cfgri_default":0,"chfa_pcm_support":true,"jamming_pin":"PIN29","extra_note":"ch.21.13: FD not supported","jamming_pin_enum":"PIN29"}}
+===== compare_modules: SIM800L | SIM800H =====
+name: SIM800L | SIM800H
+hw.package_type: LGA | LGA
+hw.pin_count: 88 | 88
+hw.voltage_min_mv: 3400 | 3400
+hw.voltage_max_mv: 4400 | 4400
+hw.flash_kb: 2048 | 4096
+hw.length_mm: 0 | 0
+hw.width_mm: 0 | 0
+hw.height_mm: 0 | 0
+hw.weight_mg: 0 | 0
+hw.operating_temp_min_c: 0 | 0
+hw.operating_temp_max_c: 0 | 0
+hw.current_sleep_ua: 0 | 0
+hw.current_peak_ma: 0 | 0
+hw.gprs_class: 0 | 0
+hw.gprs_downlink_kbps: 0 | 0
+hw.gprs_uplink_kbps: 0 | 0
+hw.baud_rate_min: 0 | 0
+hw.baud_rate_max: 0 | 0
+hw.sim_card_type: UNKNOWN | UNKNOWN
+hw.antenna_connector: UNKNOWN | UNKNOWN
+hw.uart_count: 0 | 0
+hw.usb_support: false | false
+hw.rtc_backup: false | false
+hw.network_status_pin:  | 
+hw.operating_status_pin:  | 
+feat.has_bluetooth: false | true
+feat.has_gps: false | false
+feat.has_fm: true | true
+feat.has_audio: true | true
+feat.has_keypad: true | true
+feat.has_sd: true | true
+feat.has_pcm: true | true
+feat.has_i2c: true | true
+feat.gpio_count: 3 | 3
+feat.adc_count: 1 | 1
+feat.pwm_count: 1 | 1
+feat.has_uart: false | false
+feat.has_usb: false | false
+feat.has_rtc: false | false
+feat.has_kpled: false | false
+feat.has_rf_sync: false | false
+feat.has_antenna_gps: false | false
+feat.has_antenna_bt: false | false
+feat.has_tdd: false | false
+at.cband_quad_band: true | true
+at.cmic_channels: 3 | 3
+at.sidet_channels: 3 | 3
+at.supports_csclk2: true | true
+at.cfgri_default: 0 | 0
+at.chfa_pcm_support: true | true
+at.jamming_pin: PIN5 | PIN5
+at.extra_note:  | 
+at.jamming_pin_enum: PIN5 | PIN5
+
+===== compare_modules: SIM800C | SIM800C-DS =====
+name: SIM800C | SIM800C-DS
+hw.package_type: SMT | SMT+LGA
+hw.pin_count: 42 | 77
+hw.voltage_min_mv: 3400 | 3400
+hw.voltage_max_mv: 4400 | 4400
+hw.flash_kb: 4096 | 4096
+hw.length_mm: 0 | 0
+hw.width_mm: 0 | 0
+hw.height_mm: 0 | 0
+hw.weight_mg: 0 | 0
+hw.operating_temp_min_c: 0 | 0
+hw.operating_temp_max_c: 0 | 0
+hw.current_sleep_ua: 0 | 0
+hw.current_peak_ma: 0 | 0
+hw.gprs_class: 0 | 0
+hw.gprs_downlink_kbps: 0 | 0
+hw.gprs_uplink_kbps: 0 | 0
+hw.baud_rate_min: 0 | 0
+hw.baud_rate_max: 0 | 0
+hw.sim_card_type: UNKNOWN | UNKNOWN
+hw.antenna_connector: UNKNOWN | UNKNOWN
+hw.uart_count: 0 | 0
+hw.usb_support: false | false
+hw.rtc_backup: false | false
+hw.network_status_pin:  | 
+hw.operating_status_pin:  | 
+feat.has_bluetooth: true | true
+feat.has_gps: false | false
+feat.has_fm: false | true
+feat.has_audio: true | true
+feat.has_keypad: false | false
+feat.has_sd: false | true
+feat.has_pcm: false | true
+feat.has_i2c: false | true
+feat.gpio_count: 0 | 2
+feat.adc_count: 1 | 1
+feat.pwm_count: 0 | 0
+feat.has_uart: false | false
+feat.has_usb: false | false
+feat.has_rtc: false | false
+feat.has_kpled: false | false
+feat.has_rf_sync: false | false
+feat.has_antenna_gps: false | false
+feat.has_antenna_bt: false | false
+feat.has_tdd: false | false
+at.cband_quad_band: true | true
+at.cmic_channels: 2 | 3
+at.sidet_channels: 2 | 3
+at.supports_csclk2: true | true
+at.cfgri_default: 2 | 0
+at.chfa_pcm_support: false | true
+at.jamming_pin: PIN29 | PIN29
+at.extra_note:  | ch.21.13: FD not supported
+at.jamming_pin_enum: PIN29 | PIN29
+
+===== compare_modules: SIM808 | SIM868 =====
+name: SIM808 | SIM868
+hw.package_type: SMT | SMT+LGA
+hw.pin_count: 68 | 77
+hw.voltage_min_mv: 3400 | 3400
+hw.voltage_max_mv: 4400 | 4400
+hw.flash_kb: 0 | 4096
+hw.length_mm: 0 | 0
+hw.width_mm: 0 | 0
+hw.height_mm: 0 | 0
+hw.weight_mg: 0 | 0
+hw.operating_temp_min_c: 0 | 0
+hw.operating_temp_max_c: 0 | 0
+hw.current_sleep_ua: 0 | 0
+hw.current_peak_ma: 0 | 0
+hw.gprs_class: 0 | 0
+hw.gprs_downlink_kbps: 0 | 0
+hw.gprs_uplink_kbps: 0 | 0
+hw.baud_rate_min: 0 | 0
+hw.baud_rate_max: 0 | 0
+hw.sim_card_type: UNKNOWN | UNKNOWN
+hw.antenna_connector: UNKNOWN | UNKNOWN
+hw.uart_count: 0 | 0
+hw.usb_support: false | false
+hw.rtc_backup: false | false
+hw.network_status_pin:  | 
+hw.operating_status_pin:  | 
+feat.has_bluetooth: true | true
+feat.has_gps: true | true
+feat.has_fm: false | false
+feat.has_audio: true | true
+feat.has_keypad: true | false
+feat.has_sd: true | true
+feat.has_pcm: true | true
+feat.has_i2c: true | true
+feat.gpio_count: 2 | 2
+feat.adc_count: 2 | 1
+feat.pwm_count: 2 | 0
+feat.has_uart: false | false
+feat.has_usb: false | false
+feat.has_rtc: false | false
+feat.has_kpled: false | false
+feat.has_rf_sync: false | false
+feat.has_antenna_gps: false | false
+feat.has_antenna_bt: false | false
+feat.has_tdd: false | false
+at.cband_quad_band: true | true
+at.cmic_channels: 3 | 3
+at.sidet_channels: 3 | 3
+at.supports_csclk2: true | true
+at.cfgri_default: 2 | 2
+at.chfa_pcm_support: true | true
+at.jamming_pin: PIN63 | PIN29
+at.extra_note:  | 
+at.jamming_pin_enum: PIN63 | PIN29
+

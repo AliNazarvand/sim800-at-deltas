@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "cross_references.yaml",
+  "type": "object",
+  "required": ["schema_version", "cross_references"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "cross_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["module"],
+        "properties": {
+          "module": { "type": "string" },
+          "audio_pins": {
+            "type": "array",
+            "maxItems": 8,
+            "items": { "type": "string" }
+          },
+          "related_commands": {
+            "type": "array",
+            "maxItems": 16,
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
