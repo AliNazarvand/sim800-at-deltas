@@ -68,6 +68,203 @@ The project is **data-driven**: the single source of truth is a set of YAML file
 ### As a CMake subproject (FetchContent)
 
 
+---
+
+As an installed package
+
+find_package(simcom REQUIRED)
+target_link_libraries(my_app PRIVATE simcom::simcom)
+
+---
+
+Via pkg-config
+pkg-config --cflags --libs simcom
+
+---
+
+Header include
+#include "simcom/simcom.hpp"
+
+const simcom::ModuleSpec* m = simcom::lookup_by_name("SIM808");
+if (m && m->feat.has_gps) {
+    // ...
+}
+
+⚠️ Important: Use GIT_TAG v1.0.0 instead of main in production to avoid breaking changes.
+
+
+
+
+📚 Documentation
+Document	Description
+API Reference	Complete Doxygen-generated API documentation.
+Data Pipeline	How YAML files are processed into C++ headers.
+Contributing Guide	How to contribute to the project.
+Code of Conduct	Community guidelines and expectations.
+Security Policy	How to report security vulnerabilities.
+
+
+
+
+🏗️ Repository Layout
+<details> <summary>Click to expand file tree</summary>
+
+.
+├── include/simcom/     C++ headers (header-only)
+├── src/                Demo application
+├── test/               Unit tests (C++ and Python)
+├── tools/              Python code generation + validation
+│   └── schemas/        JSON Schemas for the YAML files
+├── data/               YAML source of truth (modules, deltas, xrefs)
+├── docs/               Documentation
+├── exports/            Generated JSON/CSV/Markdown (gitignored)
+├── CMakeLists.txt
+├── requirements.txt    Python dependencies
+└── LICENSE
+</details>
+
+
+
+⚙️ Requirements
+C++17 compiler (GCC 9+, Clang 10+, MSVC 2019+)
+
+CMake 3.16+
+
+Python 3.10+ (for tools and code generation)
+
+No dynamic allocation, no exceptions, no Arduino dependency in headers.
+
+Install Python dependencies:
+
+
+pip install -r requirements.txt
+
+
+🔄 Data Pipeline
+<details> <summary>Click to expand pipeline details</summary>
+Human developers download the 13 datasheet PDFs into data/pdfs/ (gitignored).
+
+python tools/extract_pdf.py extracts raw tables into data/raw/.
+
+Humans review the raw values and edit data/*.yaml.
+
+python tools/validate_yaml.py --strict validates the YAML.
+
+python tools/generate_cpp.py regenerates include/simcom/simcom_database.hpp.
+
+python tools/export_json.py, export_csv.py, export_markdown.py produce exports/ artifacts.
+
+</details>
+
+
+
+🧪 Build and Test
+cmake -S . -B build
+cmake --build build
+ctest --test-dir build --output-on-failure
+Expected: 8/8 tests pass (after setting APPROVED_BY in test/golden/README.md).
+
+Note: The APPROVED_BY field is a golden test approval marker used to verify that expected test outputs have been reviewed and signed off by a maintainer.
+
+Available CMake targets
+Target	Description
+simcom	Header-only INTERFACE library
+simcom_demo	Example program
+simcom_generate	Run tools/generate_cpp.py
+simcom_validate	Run tools/validate.py + validate_yaml.py --strict
+simcom_export	Run all exporters
+
+🗺️ Roadmap
+☑ Core header-only database
+☑ CMake FetchContent integration
+☑ pkg-config support
+☑ CI pipeline with automated tests
+☑ JSON Schema validation
+□ Doxygen API documentation
+□ Published releases with semantic versioning
+□ Additional module families (SIM7000, SIM7600)
+□ PlatformIO registry publication
+❓ FAQ
+<details> <summary><strong>Q: Can I edit the generated header manually?</strong></summary>
+No. The header include/simcom/simcom_database.hpp is auto-generated. All changes must be made in the YAML source files and regenerated via tools/generate_cpp.py.
+
+</details><details> <summary><strong>Q: Does this library require dynamic memory allocation?</strong></summary>
+No. The library is designed for embedded systems with strict memory constraints. All data is static and known at compile time.
+
+</details><details> <summary><strong>Q: How do I add a new module to the database?</strong></summary>
+Add the datasheet PDF to data/pdfs/.
+
+Run tools/extract_pdf.py.
+
+Edit the YAML file in data/ with the extracted values.
+
+Run tools/validate_yaml.py --strict.
+
+Run tools/generate_cpp.py to regenerate the header.
+
+See the Data Pipeline section for full details.
+
+</details>
+
+
+
+
+
+
+🤝 Contributing
+We welcome contributions! Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests.
+
+Quick Contribution Flow
+Fork the repository
+
+Create a feature branch (git checkout -b feature/amazing-feature)
+
+Commit your changes (git commit -m 'Add amazing feature')
+
+Push to the branch (git push origin feature/amazing-feature)
+
+Open a Pull Request
+
+All contributors are expected to follow our Code of Conduct.
+
+🔒 Security
+Please report security issues per SECURITY.md. Do not open public issues for security vulnerabilities.
+
+📄 License
+This project is licensed under the MIT License — see the LICENSE file for details.
+
+🙏 Acknowledgments
+SIMCom for the SIM800 Series documentation
+
+The ESP32 community for testing and feedback
+
+All contributors who have helped improve this project
+
+📝 Citation
+If you use this project in academic work, please cite:
+
+bibtex
+@misc{sim800-at-deltas,
+  author = {Nazarvand, Ali},
+  title = {SIMCom SIM800 Series — Static Module Database},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/AliNazarvand/sim800-at-deltas}}
+}
+👤 Author
+Ali Nazarvand
+
+GitHub: @AliNazarvand
+
+Email: ali.nazarvand@example.com (replace with real email)
+
+<div align="center">
+⬆ Back to Top
+
+Made with ❤️ for the embedded community
+
+</div> 
 
 
 
@@ -77,6 +274,9 @@ The project is **data-driven**: the single source of truth is a set of YAML file
 
 
 
+
+
+===================================
 
 
 
