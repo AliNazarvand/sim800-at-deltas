@@ -16,6 +16,85 @@
 
 </div>
 
+---
+
+## 📖 Overview
+
+This project provides a **data-driven, zero-overhead C++17 header-only library** that exposes a static database of SIMCom SIM800 Series module specifications. It is designed for developers building firmware for ESP32-WROOM-32 and similar microcontrollers who need reliable, compile-time access to module capabilities without dynamic allocation.
+
+The project is **data-driven**: the single source of truth is a set of YAML files under `data/`. The C++ header `include/simcom/simcom_database.hpp` is **auto-generated** from those YAML files and must not be edited by hand.
+
+> **Key Design Principles:**
+> - 🚫 No dynamic allocation
+> - 🚫 No exceptions
+> - 🚫 No Arduino dependency in headers
+> - ✅ Header-only integration (CMake, pkg-config, FetchContent)
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| **Header-Only** | Zero build configuration — just include and use. |
+| **C++17** | Modern standards with `constexpr` and structured bindings. |
+| **Static Database** | All specifications known at compile time — no runtime lookup cost. |
+| **YAML-Driven** | Human-readable YAML source of truth, auto-generated C++ header. |
+| **Zero Dependencies** | No external libraries required in headers. |
+| **ESP32-Ready** | Optimized for ESP32-WROOM-32 and similar MCUs. |
+| **Multi-Format Export** | Generated JSON, CSV, and Markdown artifacts. |
+| **Strict Validation** | JSON Schema validation for all YAML data. |
+
+---
+
+## 📦 Supported Modules
+
+| # | Module     | Package  | Pins | GPS | BT  | FM  | Audio |
+|---|------------|----------|-----:|:---:|:---:|:---:|:-----:|
+| 1 | SIM800L    | LGA      |  88  |  -  |  -  |  ✓  |   ✓   |
+| 2 | SIM800C    | SMT      |  42  |  -  |  ✓  |  -  |   ✓   |
+| 3 | SIM808     | SMT      |  68  |  ✓  |  ✓  |  -  |   ✓   |
+| 4 | SIM868     | SMT+LGA  |  77  |  ✓  |  ✓  |  -  |   ✓   |
+| 5 | SIM800A    | SMT      |  68  |  -  |  ✓  |  -  |   ✓   |
+| 6 | SIM800F    | SMT      |  68  |  -  |  ✓  |  -  |   ✓   |
+| 7 | SIM800H    | LGA      |  88  |  -  |  ✓  |  ✓  |   ✓   |
+| 8 | SIM800     | SMT      |  68  |  -  |  ✓  |  -  |   ✓   |
+| 9 | SIM800C-DS | SMT+LGA  |  77  |  -  |  ✓  |  ✓  |   ✓   |
+
+---
+
+## 🚀 Quick Start
+
+### As a CMake subproject (FetchContent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # SIMCom SIM800 Series — Static Module Database
